@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+
+    <style>
+        main {
+            margin-top: 200px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #watch {
+            margin: 40px auto;
+            font-size: 50px;
+            text-align: center;
+            padding: 30px 0;
+            width: 400px;
+            border: 1px solid black;
+
+        }
+
+        .btns {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            height: 40px;
+            width: 130px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        button:focus {
+            background-color: black;
+            border: 1px solid black;
+            color: white;
+        }
+
+        #stop-btn {
+            margin: 0 40px;
+        }
+
+        @media (max-width:768px) {
+
+            #watch {
+                width: 90%;
+                margin: 40px auto;
+            }
+
+            .btns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #stop-btn {
+                margin: 40px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>STOP WATCH</h1>
+
+        <section id="watch">
+            <span id="min">0</span> : <span id="sec">0</span> : <span id="milisecond">0</span>
+        </section>
+
+        <section class="btns">
+            <button id="start-btn">Start</button>
+            <button id="stop-btn">Stop</button>
+            <button id="reset-btn">Reset</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
